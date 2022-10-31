@@ -56,7 +56,7 @@ watch(loginInfor, () => {
 </script>
 
 
-<style>
+<style scoped>
 input[type="password"] {
   width: 100%;
   padding: 12px 20px;

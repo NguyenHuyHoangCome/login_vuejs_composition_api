@@ -1,14 +1,11 @@
-export default class CarService {
 
-	getCarsSmall() {
-		return fetch.get('demo/data/cars-small.json').then(res => res.json()).then(d => d.data);
-	}
+import axios from 'axios'
 
-	getCarsMedium() {
-		return fetch.get('demo/data/cars-medium.json').then(res => res.json()).then(d => d.data);
-	}
+export default class ProductService {
 
-	getCarsLarge() {
-		return fetch.get('demo/data/cars-large.json').then(res => res.json()).then(d => d.data);
+    getProductsSmall() {
+		return axios.get('https://dummyjson.com/products')
+		.then(res => res.data)
 	}
 }
+

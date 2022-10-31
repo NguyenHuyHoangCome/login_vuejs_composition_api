@@ -17,7 +17,6 @@
       </div>
   </div>
 </template>
-
 <script>
 export default {
   name:'LOGIN',
@@ -27,8 +26,10 @@ export default {
 import InputText from './text_box/Input_text.vue';
 import { ref, reactive, computed } from 'vue'
 import { useRouter } from 'vue-router'
+
 import  { useUserStore } from '@/stores/user';
 const store = useUserStore()
+
 const router = useRouter()
 const msg = ref([])
 const loginInfor = reactive({
